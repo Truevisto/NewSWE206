@@ -31,13 +31,14 @@ public class Sorter {
             list[key+1] = currentElement;
         }
     }
-<<<<<<< HEAD
-    public static void sort(int[] arr){
+
+    public static void sort(int[] arr) {
         selectionSort(arr);
-=======
+    }
+    // changed the neme by myself
     public static void inSort(int[] array){
         insertionSort(array);
->>>>>>> 95a439b644868d9495f2a7f5780d76b2c5d1c05f
+
     }
 }
 
