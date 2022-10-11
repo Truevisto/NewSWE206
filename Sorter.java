@@ -22,15 +22,17 @@ public class Sorter {
 
 }
 
-public static void insertionSort (int[] list){
-    for (int i = 1; i < list.length; i++) {
-        int currentElement = list[i];
-        int key;
-        for ( key = i-1; key >= 0 && currentElement < list[key]; key--)
-            list[key+1] = list[key];
-        list[key+1] = currentElement;
+    public static void insertionSort (int[] list){
+        for (int i = 1; i < list.length; i++) {
+            int currentElement = list[i];
+            int key;
+            for ( key = i-1; key >= 0 && currentElement < list[key]; key--)
+                list[key+1] = list[key];
+            list[key+1] = currentElement;
+        }
     }
-
-    }        
+    public static void sort(int[] array){
+        insertionSort(array);
+    }
 }
 
