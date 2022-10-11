@@ -18,9 +18,26 @@ public class Sorter {
             int temp = arr[min_idx];
             arr[min_idx] = arr[i];
             arr[i] = temp;
+        } 
+
+}
+
+    public static void insertionSort (int[] list){
+        for (int i = 1; i < list.length; i++) {
+            int currentElement = list[i];
+            int key;
+            for ( key = i-1; key >= 0 && currentElement < list[key]; key--)
+                list[key+1] = list[key];
+            list[key+1] = currentElement;
         }
     }
+<<<<<<< HEAD
     public static void sort(int[] arr){
         selectionSort(arr);
+=======
+    public static void inSort(int[] array){
+        insertionSort(array);
+>>>>>>> 95a439b644868d9495f2a7f5780d76b2c5d1c05f
     }
 }
+
